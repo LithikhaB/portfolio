@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Mail, Send } from "lucide-react";
+import SectionHeading from "./SectionHeading";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
@@ -35,17 +36,17 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="mx-8 my-16 text-center">
-      <h2 className="text-2xl font-bold mb-2">
-        <span className="text-terminal-accent">05.</span> Contact
-      </h2>
+    <section id="contact" className="mx-8 my-16">
+      <SectionHeading title="Contact" />
 
-      <a href="mailto:lithikhab@gmail.com" className="inline-flex items-center gap-2 text-terminal-dim hover:text-terminal-accent transition-colors mb-8">
-        <Mail size={16} />
-        lithikhab@gmail.com
-      </a>
+      <div className="mb-8">
+        <a href="mailto:lithikhab@gmail.com" className="inline-flex items-center gap-2 text-terminal-dim hover:text-terminal-accent transition-colors">
+          <Mail size={16} />
+          lithikhab@gmail.com
+        </a>
+      </div>
 
-      <form onSubmit={handleSubmit} className="max-w-2xl mx-auto text-left border border-terminal-dim/30 rounded-lg p-6 space-y-5">
+      <form onSubmit={handleSubmit} className="max-w-2xl text-left border border-terminal-dim/30 rounded-lg p-6 space-y-5">
         <div className="grid md:grid-cols-2 gap-5">
           <div>
             <label className="text-xs text-terminal-dim uppercase tracking-wide">Name</label>
