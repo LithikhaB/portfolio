@@ -5,7 +5,7 @@ const sections = ["about", "experience", "projects", "achievements", "contact"];
 
 export default function Nav() {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 border-b border-terminal-dim/20">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 border-b border-terminal-dim/20 bg-terminal-bg/90 backdrop-blur-sm">
       <span className="text-terminal-accent">./portfolio</span>
 
       <div className="flex items-center gap-6 text-sm">

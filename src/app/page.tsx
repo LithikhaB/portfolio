@@ -8,7 +8,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto">
+    <main className="max-w-6xl mx-auto py-15">
       <Nav />
       <Hero />
       <Experience />

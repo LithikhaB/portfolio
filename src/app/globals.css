@@ -28,3 +28,16 @@ body {
 section[id] {
   scroll-margin-top: 5rem;
 }
+
+@keyframes glow-pulse {
+  0%, 50% {
+    text-shadow: 0 0 10px var(--color-terminal-accent), 0 0 22px color-mix(in srgb, var(--color-terminal-accent) 50%, transparent);
+  }
+  20% {
+    text-shadow: 0 0 18px var(--color-terminal-accent), 0 0 38px color-mix(in srgb, var(--color-terminal-accent) 70%, transparent);
+  }
+}
+
+.glow-text {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
