@@ -61,8 +61,8 @@ const projects = [
   {
     title: "PixelForge",
     subtitle: "Chainable image-filter pipeline, free & open-source",
-    category: "SDE",
-    date: "2026",
+    category: "AI/ML",
+    date: "Sep 2026",
     points: [
       "Built a Streamlit image-filter app where multiple filters (sketch, cartoon, sepia, vintage, and more) chain into an ordered pipeline instead of applying one at a time.",
       "Added batch folder processing with one-click ZIP download and a draggable before/after comparison slider.",
@@ -71,19 +71,7 @@ const projects = [
     github: "https://github.com/LithikhaB/PixelForge",
     gitlab: null,
   },
-  {
-    title: "Honest ATS",
-    subtitle: "Semantic resume-to-JD scorer with fix recommendations",
-    category: "AI/ML",
-    date: "2026",
-    points: [
-      "Built a resume scorer using semantic similarity rather than keyword counting, flagging tech-stack mismatches between a resume and a job description.",
-      "Added LLM-grounded, gap-specific fix recommendations and a dashboard tracking resume score evolution across versions.",
-    ],
-    tech: ["Streamlit", "sentence-transformers", "Gemini API", "Supabase", "Plotly"],
-    github: "https://github.com/LithikhaB/honest-ats",
-    gitlab: null,
-  },
+  
   {
     title: "Quest1 — Dialogue Frame Finder",
     subtitle: "Finds the exact video frame a line of dialogue first appears",

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Code2, BrainCircuit, Globe, Database, Cpu } from "lucide-react";
+import { Code2, BrainCircuit, Globe, Database, Cpu, Cloud } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const categories = [
@@ -10,14 +10,14 @@ const categories = [
     label: "Languages",
     icon: Code2,
     color: "#7DD3FC",
-    skills: ["Python", "Java", "C", "C++", "JavaScript", "SQL"],
+    skills: ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "SQL"],
   },
   {
     id: "ai-ml",
     label: "AI / ML",
     icon: BrainCircuit,
     color: "#F9A8D4",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Whisper", "Gemini API", "Model Deployment"],
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Feature Engineering", "Model Deployment"],
   },
   {
     id: "web-dev",
@@ -27,11 +27,18 @@ const categories = [
     skills: ["HTML/CSS", "Tailwind CSS", "Django", "Spring Boot", "Phoenix/LiveView", "Streamlit", "REST APIs"],
   },
   {
+    id: "cloud-systems",
+    label: "Cloud & System Design",
+    icon: Cloud,
+    color: "#FDBA74",
+    skills: ["AWS", "DynamoDB", "System Design", "Docker"],
+  },
+  {
     id: "tools-db",
     label: "Tools & DB",
     icon: Database,
     color: "#FCD34D",
-    skills: ["Git", "Docker", "Redis", "PostgreSQL", "MySQL", "FFmpeg", "yt-dlp"],
+    skills: ["Git", "Redis", "PostgreSQL", "MySQL"],
   },
 ];
 
