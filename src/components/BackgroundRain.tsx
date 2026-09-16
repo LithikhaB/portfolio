@@ -40,7 +40,7 @@ export default function BackgroundRain() {
       ctx.clearRect(0, 0, width, height);
 
       ctx.font = `${fontSize}px monospace`;
-      ctx.fillStyle = "#00ff88";
+      ctx.fillStyle = "#7DD3FC";
 
       for (let i = 0; i < drops.length; i++) {
         const char = CHARS[Math.floor(Math.random() * CHARS.length)];
@@ -48,7 +48,7 @@ export default function BackgroundRain() {
         const x = i * fontSize;
         const y = drops[i] * fontSize;
 
-        ctx.globalAlpha = 0.25 + Math.random() * 0.35;
+        ctx.globalAlpha = 0.1 + Math.random() * 0.1;
 
         ctx.fillText(char, x, y);
 
@@ -56,7 +56,7 @@ export default function BackgroundRain() {
           drops[i] = Math.random() * -20;
         }
 
-        drops[i] += 0.01;
+        drops[i] += 0.4;
       }
 
       ctx.globalAlpha = 1;
