@@ -15,13 +15,14 @@ const TECH_COLORS: Record<string, string> = {
   rapidfuzz: "#FCD34D", "Gemini API": "#F9A8D4",
   Streamlit: "#FB7185", Pillow: "#FCD34D", OpenCV: "#60A5FA", NumPy: "#7DD3FC",
   "sentence-transformers": "#F9A8D4", Supabase: "#86EFAC", Plotly: "#C084FC",
+  Qiskit: "#C084FC", NLTK: "#86EFAC", "Scikit-learn": "#FCD34D",
 };
 const defaultColor = "#9CA3AF";
 
 const projects = [
   {
     title: "Distributed Rate Limiter",
-    subtitle: "Redis-backed, atomic request throttling",
+    subtitle: "Redis-backed, atomic request throttling, Lua Scripting",
     category: "SDE",
     date: "Sep 2026",
     points: [
@@ -73,7 +74,7 @@ const projects = [
   },
   
   {
-    title: "Quest1 — Dialogue Frame Finder",
+    title: "Dialogue Frame Finder",
     subtitle: "Finds the exact video frame a line of dialogue first appears",
     category: "AI/ML",
     date: "Aug 2026",
@@ -83,6 +84,45 @@ const projects = [
     ],
     tech: ["Python", "yt-dlp", "FFmpeg", "Whisper", "rapidfuzz", "Gemini API"],
     github: "https://github.com/LithikhaB/Quest1",
+    gitlab: null,
+  },
+  {
+    title: "Quantum Lab",
+    subtitle: "Quantum computing educational app",
+    category: "SDE",
+    date: "June 2026",
+    points: [
+      "Built a Streamlit app teaching quantum computing concepts interactively, with rich inline explanations at every step.",
+      "Focused on clean, professional UX — dark theming and readable typography over gimmicks.",
+    ],
+    tech: ["Python", "Qiskit", "Streamlit", "Plotly"],
+    github: "https://github.com/LithikhaB/quantum-lab",
+    gitlab: null,
+  },
+  {
+    title: "Spam Detection",
+    subtitle: "Text classifier for spam vs. legitimate messages",
+    category: "AI/ML",
+    date: "Oct 2024",
+    points: [
+      "Built an NLP pipeline with tokenization, stopword removal, stemming, and POS tagging feeding into classical ML classifiers.",
+      "Compared Naive Bayes and Logistic Regression for spam detection accuracy, wrapped in a simple Streamlit interface.",
+    ],
+    tech: ["Python", "Streamlit", "NLTK", "Scikit-learn"],
+    github: "https://github.com/LithikhaB/spam-detection",
+    gitlab: null,
+  },
+  {
+    title: "Calorie Burnt Prediction",
+    subtitle: "Regression model estimating calories burnt from activity data",
+    category: "AI/ML",
+    date: "Oct 2024",
+    points: [
+      "Trained a Random Forest Regressor to predict calories burnt from workout/activity features.",
+      "Deployed as an interactive Streamlit app for live predictions from user input.",
+    ],
+    tech: ["Python", "Streamlit", "Scikit-learn"],
+    github: "https://github.com/LithikhaB/calorie-burnt-prediction",
     gitlab: null,
   },
 ];

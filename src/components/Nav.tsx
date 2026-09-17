@@ -1,5 +1,7 @@
 import ThemeToggle from "./ThemeToggle";
-import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
 
 const sections = ["experience", "achievements", "projects", "skills", "contact"];
 
@@ -19,8 +21,8 @@ export default function Nav() {
           <a href="https://github.com/LithikhaB" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-accent transition-colors">
             <FaGithub size={18} />
           </a>
-          <a href="https://gitlab.com/lithikhab" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-accent transition-colors">
-            <FaGitlab size={18} />
+          <a href="https://leetcode.com/u/lithikhab/" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-accent transition-colors">
+            <SiLeetcode size={18} />
           </a>
           <a href="https://linkedin.com/in/lithikha" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-accent transition-colors">
             <FaLinkedin size={18} />
