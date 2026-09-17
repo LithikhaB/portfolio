@@ -48,7 +48,7 @@ export default function BackgroundRain() {
         const x = i * fontSize;
         const y = drops[i] * fontSize;
 
-        ctx.globalAlpha = 0.1 + Math.random() * 0.1;
+        ctx.globalAlpha = 0.2 + Math.random() * 0.2;
 
         ctx.fillText(char, x, y);
 

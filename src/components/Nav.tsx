@@ -1,7 +1,7 @@
 import ThemeToggle from "./ThemeToggle";
 import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 
-const sections = ["about", "experience", "projects", "achievements", "contact"];
+const sections = ["experience", "achievements", "projects", "skills", "contact"];
 
 export default function Nav() {
   return (
