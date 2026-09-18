@@ -1,4 +1,3 @@
-import ThemeToggle from "./ThemeToggle";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
@@ -28,8 +27,6 @@ export default function Nav() {
             <FaLinkedin size={18} />
           </a>
         </div>
-
-        <ThemeToggle />
       </div>
     </nav>
   );
